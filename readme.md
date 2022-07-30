@@ -15,6 +15,12 @@ Comes with an example input and exported file.
 
 Program only works on windows
 
+To setup:
+1: clone/download the repo and unzip
+
+2: cd into the folder and run "pip install -r requirements.txt" (without quotes)
+
+To use:
 1: Name a file 'input.mp4' 
    and put it in the same folder as this readme.
 
