@@ -2,6 +2,7 @@ import ffmpeg
 import os
 import cv2
 import math
+import sys
 
 #Get info on this video... if it exists.
 try:
