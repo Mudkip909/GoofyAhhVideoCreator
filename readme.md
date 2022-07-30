@@ -24,6 +24,7 @@ To setup:
 2: cd into the folder and run "pip install -r requirements.txt" (without quotes)
 
 =============================================================================
+
 To use:
 
 1: Name a file 'input.mp4' 
