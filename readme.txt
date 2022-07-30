@@ -17,3 +17,4 @@ Program only works on windows
 3: The exported goofy ahh video will now be playable in a 
    web browser like chrome. It crashes VLC, so dont try that.
 
+https://github.com/Mudkip909/GoofyAhhVideoCreator/blob/main/example.webm
