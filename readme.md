@@ -1,5 +1,5 @@
 Goofy Ahh Video Creator
-
+================================================================================================
 Converts any mp4 to a size-changing wacky wavy mess.
 Works well with chrome, havent tested on other browsers, probably works on edge.
 Works on discord for browser, but the desktop app is unpredictable, and it probably doesnt work on mobile.
@@ -13,14 +13,19 @@ Example of what happens:
 
 Comes with an example input and exported file.
 
-Program only works on windows
+Program only works on windows (for now)
+
+================================================================================================
 
 To setup:
+
 1: clone/download the repo and unzip
 
 2: cd into the folder and run "pip install -r requirements.txt" (without quotes)
 
+================================================================================================
 To use:
+
 1: Name a file 'input.mp4' 
    and put it in the same folder as this readme.
 
@@ -28,4 +33,6 @@ To use:
 
 3: The exported goofy ahh video will now be playable in a 
    web browser like chrome. It crashes VLC, so dont try that.
+   
+================================================================================================
 
