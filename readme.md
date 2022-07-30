@@ -19,9 +19,12 @@ Program only works on windows (for now) and doesnt seem to support 2.7 due to ff
 
 To setup:
 
-1: clone/download the repo and unzip
+1: ensure you have ffmpeg installed and the environment variables set up
 
-2: cd into the folder and run "pip install -r requirements.txt" (without quotes)
+2: clone/download the repo and unzip
+
+3: cd into the folder and run "pip install -r requirements.txt" (without quotes)
+
 
 =============================================================================
 
