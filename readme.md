@@ -13,7 +13,7 @@ Example of what happens:
 
 Comes with an example input and exported file.
 
-Program only works on windows (for now)
+Program only works on windows (for now) and doesnt seem to support 2.7 due to ffmpeg-python
 
 =============================================================================
 
