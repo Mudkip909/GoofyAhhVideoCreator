@@ -4,16 +4,19 @@ import cv2
 import math
 import sys
 
+#Modify this to change the input type
+inputType = 'mp4'
+
 #Get info on this video... if it exists.
 try:
-    probe = ffmpeg.probe('input.mp4')
+    probe = ffmpeg.probe('input.' + inputType)
     video = next((stream for stream in probe['streams'] if stream['codec_type'] == 'video'), None)
     fps = int(video['r_frame_rate'].split('/')[0]) 
     frames = int(video['nb_frames'].split('/')[0]) 
     width = int(video['width'])
     height = int(video['height'])
 except:
-    print("input.mp4 could not be found. is it an mp4 file and is it spelled correctly?")
+    print("input."+ inputType + " could not be found. is it a " + inputType + " file and is it spelled correctly?")
     sys.exit(1)
 #Make the list used for ffmpeg concat
 with open('temp/list.txt', 'w') as f:
@@ -23,7 +26,7 @@ with open('temp/list.txt', 'w') as f:
     f.close()
 
 
-vc = cv2.VideoCapture('input.mp4')
+vc = cv2.VideoCapture('input.' + inputType)
 c=1
 
 if vc.isOpened():
@@ -45,7 +48,7 @@ while rval:
         .filter('scale', w=(24 + abs(math.cos(c/3)*800)), h=(24 + abs(math.sin(c/3)*500)))
         .output('temp/' + str(c) + '.webm')
         .overwrite_output()
-        #zzzzzz
+        #zzzzzz...
         .run(quiet=True)
         )
         print('Frame: ' + str(c) + ' of ' + str(frames))
